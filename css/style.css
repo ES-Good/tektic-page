@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.main p{
+    margin-bottom: 24px;
+}
+
+.fw600{
+    font-weight: 600;
+}
+
+.container-medium{
+    max-width: 1426px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+}
+
+.container{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 18px; 
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.header{
+    width: 100%;
+    box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.09);
+    margin-bottom: 74px;
+}
+
+.header__logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    margin-right: 32px;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.flex-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-block__main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.flex-block__city-info {
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-block__city {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+}
+
+.flex-block__city img{
+    margin-right: 16px;
+    width: 13px;
+}
+
+.flex-block__tel {
+    margin-right: 34px;
+}
+
+.flex-block__social-box{
+    display: flex;
+}
+
+.flex-block__ico{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    margin-right: 16px;
+}
+
+.flex-block__ico:last-child{
+    margin-right: 0;
+}
+
+.flex-block__ico img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .flex-block__ico{
+    background-color: #333333;
+}
+
+.footer .flex-block__ico{
+    background-color: #fff;
+}
+
+.header .flex-block__tel{
+    color: #333333;
+}
+
+.title{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.logo-big{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 54px;
+    display: block;
+}
+
+.big-gal{
+    margin: 90px 0 130px;
+}
+
+.big-gal .swiper-pagination-progressbar{
+    background-color: #F7F7F8;
+    bottom: 0;
+    top: auto;
+    max-width: 1426px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.big-gal .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+.footer *{
+    color: #fff;
+}
+
+.footer{
+    background-color: #333333;
+}
+
+.footer__info_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .header .flex-block__city-info:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .footer .flex-block{
+        flex-direction: column;
+    }
+
+    .footer .flex-block__main-info{
+        flex-direction: column;
+    }
+
+    .footer .flex-block__city-info{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    .footer .flex-block__city{
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+
+    .footer .flex-block__tel{
+        margin-right: 0;
+    }
+
+    .footer__info{
+        display: none;
+    }
+
+    .footer__info_mobile{
+        display: block;
+        margin-top: 56px;
+    }
+    
+    .big-gal{
+        padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header .flex-block__city,
+    .logo-dis{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .logo{
+        display: none;
+    }
+
+    .header .flex-block__main-info{
+        width: 100%;
+    }
+
+
+}
